@@ -1,12 +1,5 @@
-﻿
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        rockPaperScissors rps = new rockPaperScissors();
-        rps.gameLoop();
-    }
-}
+﻿namespace rockPaperScissors;
+
 
 
 public class rockPaperScissors
