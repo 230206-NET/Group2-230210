@@ -1,5 +1,5 @@
 ﻿namespace BudgetApp;
-internal class BudgetApp
+public class MainMenu
 {
     static double budget = double.NaN;
     static List<(double, string)> expenses = new List<(double, string)>();

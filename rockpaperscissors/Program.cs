@@ -2,7 +2,7 @@
 
 
 
-public class rockPaperScissors
+public class MainMenu
 {
     string ans = "";
     int cpu=0, player=0;
@@ -77,7 +77,7 @@ public class rockPaperScissors
         Console.WriteLine("System wins " + player + " times");
     }
 
-    public void gameLoop(){
+    public void Start(){
         while (true)
         {
             cpuMakeChoice();

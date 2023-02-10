@@ -1,15 +1,7 @@
-﻿
-using System;
-namespace hangman;
-
-public class hangman
+﻿using System;
+namespace hangmanrunner;
+public class MainMenu
 {
-    private List<string> wordbank = new List<string> { "code", "loyalty", "practice", "potato" };
-    private string chosenWord;
-    private int count;
-    private List<char> guesses = new List<char>();
-    private int numGuess = 0;
-
     public void Start()
     {
         string temp;
@@ -30,6 +22,16 @@ public class hangman
                 h.makeGuess(temp[0]);
         }
     }
+}
+
+public class hangman
+{
+    private List<string> wordbank = new List<string> { "code", "loyalty", "practice", "potato" };
+    private string chosenWord;
+    private int count;
+    private List<char> guesses = new List<char>();
+    private int numGuess = 0;
+
     public hangman()
     {
         Random rand = new Random();

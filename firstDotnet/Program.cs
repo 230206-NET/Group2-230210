@@ -27,7 +27,7 @@
 // Console.WriteLine("Second Number: {0}", num2);
 namespace firstDotNet;
 
-public class firstDotNet
+public class MainMenu
 {
     public void Start()
     {

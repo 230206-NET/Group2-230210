@@ -1,6 +1,6 @@
 ﻿namespace ToDoApp;
 
-public class ToDoApp
+public class MainMenu
 {
 
     public void Start()

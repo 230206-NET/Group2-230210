@@ -4,7 +4,7 @@ using HotOrCold;
 using FizzBuzz;
 using ToDoApp;
 using BudgetApp;
-using hangman;
+using hangmanrunner;
 using rockPaperScissors;
 
 while(true) {
@@ -40,14 +40,15 @@ if(input!= null) {
             new ToDoApp.MainMenu().Start();
         break;
         case "6":
-            new budget.MainMenu().Start();
+            new BudgetApp.MainMenu().Start();
         break;
         case "7":
-            new hangman.MainMenu().Start();
+            new hangmanrunner.MainMenu().Start();
         break;
         case "8":
             new rockPaperScissors.MainMenu().Start();
-        case "x":
+            break;
+            case "x":
             Console.WriteLine("Goodbye!");
             Environment.Exit(0);
             break;

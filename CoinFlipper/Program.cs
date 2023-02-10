@@ -1,6 +1,6 @@
 ﻿using System;
 namespace CoinFlipper{
-    internal class CoinFlipper
+    public class MainMenu
     {
         public void Start()
         {
