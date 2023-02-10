@@ -1,7 +1,7 @@
 ﻿using System;
-internal class Program
+public class HotOrCold
 {
-    private static void Main(string[] args)
+    private void Start()
     {
         var rand = new Random();
         var num = rand.Next(1,20);

@@ -1,19 +1,23 @@
-﻿internal class Program
+﻿namespace BudgetApp;
+internal class BudgetApp
 {
     static double budget = double.NaN;
-    static List<(double,string)> expenses = new List<(double,string)>();
-    private static void Main(string[] args)
+    static List<(double, string)> expenses = new List<(double, string)>();
+    public void Start()
     {
         int menuoption = 0;
-        while(true){
+        while (true)
+        {
             Console.WriteLine("Please Choose from the following:\n1. Set budget\n2. Add expense\n3. Display current budget\n4. Exit");
-            try{
+            try
+            {
                 menuoption = int.Parse(Console.ReadLine());
             }
-            catch(Exception e){
+            catch (Exception e)
+            {
                 Console.WriteLine("Please Pick from the provided options");
             }
-            switch(menuoption)
+            switch (menuoption)
             {
                 case 1:
                     userSetBudget();
@@ -22,7 +26,7 @@
                     userAddExpense();
                     break;
                 case 3:
-                    if(budget!=double.NaN) displayBudget();
+                    if (budget != double.NaN) displayBudget();
                     else Console.WriteLine("Input a budget first");
                     break;
                 case 4:
@@ -34,22 +38,25 @@
             }
 
         }
-        
+
 
     }
 
-    static void userSetBudget(){
+    static void userSetBudget()
+    {
         Console.WriteLine("Enter value to set budget to: ");
         try
         {
             budget = double.Parse(Console.ReadLine());
         }
-        catch(FormatException e){
+        catch (FormatException e)
+        {
             Console.WriteLine("Please enter a valid number");
         }
     }
 
-    static void userAddExpense(){
+    static void userAddExpense()
+    {
         double temp;
         string tempstr;
         Console.WriteLine("Enter value for expense: ");
@@ -57,7 +64,8 @@
         {
             temp = double.Parse(Console.ReadLine());
         }
-        catch(FormatException e){
+        catch (FormatException e)
+        {
             Console.WriteLine("Please enter a valid number");
             return;
         }
@@ -68,7 +76,8 @@
 
     }
 
-    static void displayBudget(){
+    static void displayBudget()
+    {
         Console.Clear();
         Console.WriteLine("Value     Description");
         double total = 0;

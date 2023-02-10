@@ -1,8 +1,16 @@
 ﻿
 using System;
-internal class Program
+namespace hangman;
+
+public class hangman
 {
-    private static void Main(string[] args)
+    private List<string> wordbank = new List<string> { "code", "loyalty", "practice", "potato" };
+    private string chosenWord;
+    private int count;
+    private List<char> guesses = new List<char>();
+    private int numGuess = 0;
+
+    public void Start()
     {
         string temp;
         hangman h = new hangman();
@@ -22,16 +30,6 @@ internal class Program
                 h.makeGuess(temp[0]);
         }
     }
-}
-
-public class hangman
-{
-    private List<string> wordbank = new List<string> { "code", "loyalty", "practice", "potato" };
-    private string chosenWord;
-    private int count;
-    private List<char> guesses = new List<char>();
-    private int numGuess = 0;
-
     public hangman()
     {
         Random rand = new Random();

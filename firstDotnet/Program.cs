@@ -25,10 +25,17 @@
 // Console.WriteLine("After swapping");
 // Console.WriteLine("First Number: {0}", num1);
 // Console.WriteLine("Second Number: {0}", num2);
+namespace firstDotNet;
 
-Console.WriteLine("Enter number:");
-var num = int.Parse(Console.ReadLine());
-for (int i = 0; i <= 10; i++)
+public class firstDotNet
 {
-    Console.WriteLine("{0} * {1} = {2}", num, i, num*i);
+    public void Start()
+    {
+        Console.WriteLine("Enter number:");
+        var num = int.Parse(Console.ReadLine());
+        for (int i = 0; i <= 10; i++)
+        {
+            Console.WriteLine("{0} * {1} = {2}", num, i, num * i);
+        }
+    }
 }

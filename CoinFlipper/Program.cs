@@ -1,8 +1,8 @@
 ﻿using System;
 namespace CoinFlipper{
-    internal class Program
+    internal class CoinFlipper
     {
-        private static void Main(string[] args)
+        public void Start()
         {
             var rand = new Random();
             var coin = rand.Next()%2==1;
