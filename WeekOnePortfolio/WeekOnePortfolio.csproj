@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\firstDotnet\firstDotnet.csproj" />
+    <ProjectReference Include="..\CoinFlipper\CoinFlipper.csproj" />
+    <ProjectReference Include="..\HotOrCold\HotOrCold.csproj" />
+    <ProjectReference Include="..\FizzBuzz\FizzBuzz.csproj" />
+    <ProjectReference Include="..\ToDoApp\ToDoApp.csproj" />
+    <ProjectReference Include="..\budget\budget.csproj" />
+    <ProjectReference Include="..\hangman\hangman.csproj" />
+    <ProjectReference Include="..\rockpaperscissors\rockpaperscissors.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
