@@ -69,8 +69,6 @@ public class MainMenu
                 Console.WriteLine("it appears you did not pick rock paper or scissors\ncpu wins on a technicality");
                 break;
         }
-        Console.WriteLine("Do u want to continue(YES/NO):");
-        ans = Console.ReadLine().ToUpper();
         Console.WriteLine("---------------------------------------");
 
         Console.WriteLine("Player wins " + cpu + " times");
@@ -82,6 +80,9 @@ public class MainMenu
         {
             cpuMakeChoice();
             playerMakeChoice();
+            Console.WriteLine("Do u want to continue(YES/NO):");
+            ans = Console.ReadLine().ToUpper();
+            if(ans == "NO") break;
         }
     }
 

@@ -48,7 +48,7 @@ if(input!= null) {
         case "8":
             new rockPaperScissors.MainMenu().Start();
             break;
-            case "x":
+        case "x":
             Console.WriteLine("Goodbye!");
             Environment.Exit(0);
             break;
