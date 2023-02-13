@@ -71,8 +71,8 @@ public class MainMenu
         }
         Console.WriteLine("---------------------------------------");
 
-        Console.WriteLine("Player wins " + cpu + " times");
-        Console.WriteLine("System wins " + player + " times");
+        Console.WriteLine("Player wins " + player + " times");
+        Console.WriteLine("System wins " + cpu + " times");
     }
 
     public void Start(){
